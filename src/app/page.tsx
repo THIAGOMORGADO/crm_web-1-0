@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 import fundo from '@/app/assets/fundo.png'
 import Logo from '@/app/assets/logo.png'
-import { Lock, Mail } from 'lucide-react'
+import { SignInFormInputs } from './components/signin'
 
 export default function Home() {
   return (
@@ -22,29 +22,8 @@ export default function Home() {
           <p className="font-semibold text-[#6C757D] text-[15px]">
             Login with your email address
           </p>
-
           <div className="">
-            <form action="">
-              <div className="bg-[#1c1c1e] flex m-2 items-center w-full px-6 gap-1 rounded-xl">
-                <Mail size={24} color="#a280ff" />
-                <input
-                  type="email"
-                  className="w-full bg-[#1c1c1e] p-2 placeholder:text-[#a280ff] outline-none text-white"
-                  placeholder="Seu email"
-                />
-              </div>
-              <div className="bg-[#1c1c1e] flex m-2 items-center w-full px-6 gap-1 rounded-xl">
-                <Lock size={24} color="#a280ff" />
-                <input
-                  type="email"
-                  className="w-full bg-[#1c1c1e] p-2 placeholder:text-[#a280ff] outline-none text-white"
-                  placeholder="Ssua senha"
-                />
-              </div>
-              <button className="w-full py-3 px-6 text-white bg-[#a280ff] rounded-md hover:bg-[#8a65ff]">
-                Entrar
-              </button>
-            </form>
+            <SignInFormInputs />
           </div>
         </div>
 
